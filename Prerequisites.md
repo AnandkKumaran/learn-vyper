@@ -104,6 +104,6 @@ Congratulations! You've completed the prerequisites and are now ready to embark 
 Please follow the [Next button](#) to start the course.
 
 <div style="display: flex; justify-content: space-between;">
-    <a style="text-decoration: none; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px;" href="README.md">Previous: Introduction</a>
-    <a style="text-decoration: none; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px;" href="/vyper-by-examples/README.md">Next: Vyper by examples</a>
+    <a style="text-decoration: none; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; float: left;" href="README.md">Previous: Introduction</a>
+    <a style="text-decoration: none; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; float: right;" href="/vyper-by-examples/README.md">Next: Vyper by examples</a>
 </div>
