@@ -2,14 +2,6 @@
 
 Before you embark on your journey to master Vyper and smart contract development, make sure you have the following tools and software installed on your system:
 
-
-
-
-3. **Brownie Framework (Optional, but Recommended)**: While not mandatory, the Brownie framework offers an excellent environment for smart contract development, testing, and deployment. To install Brownie, you can use:
-
-
-
-
 ## Python
 
 Vyper is closely related to Python, so having Python installed is essential. If you don't have Python installed, you can download it from the [official Python website](https://www.python.org/downloads/).
@@ -36,7 +28,7 @@ The Vyper compiler is required to translate your Vyper smart contracts into byte
 pip install vyper
 ```
 
-OR
+### OR
 
 ```sh
 python3.9 -m pip install vyper

@@ -22,7 +22,7 @@ Clone the Repository: Begin by cloning this repository to your local machine. Yo
 git clone https://github.com/your-username/vyper-learning-path.git
 ```
 
-OR
+### OR
 
 You have the option to start from scratch by building the project structure and contracts step by step. We highly recommend this approach for a solid foundation.
 
