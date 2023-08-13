@@ -81,7 +81,7 @@ Upon successful installation, you'll receive an output similar to:
 
 
 ```sh
-anand@anand-HP-Laptop-15q-ds0xxx:~$ pipx install eth-brownie
+ubuntu@ubuntu:~$ pipx install eth-brownie
   installed package eth-brownie 1.19.3, installed using Python 3.9.17
   These apps are now globally available
     - brownie
