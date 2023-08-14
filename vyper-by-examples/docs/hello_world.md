@@ -79,6 +79,91 @@ Invoke the greet() function:
 'Hello World'
 ```
 
+## Uint Testing
+
+When it comes to software development, unit testing plays a crucial role in ensuring the reliability and correctness of your code. In the context of smart contract development, unit testing is equally essential to verify the behavior of your smart contracts and catch potential issues early in the development process.
+
+Unit testing not only helps validate the functionality of your code but also aids in achieving a high level of code coverage. Code coverage measures how much of your code is executed during tests, indicating the thoroughness of your testing strategy. Additionally, monitoring gas usage is vital for optimizing smart contract deployments. Gas reports provide insights into the gas consumption of your contract, helping you identify gas-intensive operations and optimize your code for better performance.
+
+For a more comprehensive understanding of unit tests in Brownie, refer to the [official documentation](https://eth-brownie.readthedocs.io/en/stable/tests-pytest-intro.html#writing-unit-tests).
+
+Let's dive into writing unit tests for the `HelloWorld` contract:
+
+1. Create a file named `HelloWorld_test.py` in the `tests` folder.
+
+2. Copy and paste the following script into `HelloWorld_test.py`:
+
+```python
+import pytest
+
+from brownie import HelloWorld, accounts
+
+@pytest.fixture
+def helloWorld():
+    return accounts[0].deploy(HelloWorld)
+
+def test_greet(helloWorld):    
+    assert helloWorld.greet() == "Hello World"
+```
+
+Run unit tests:
+
+```sh
+$ brownie test tests/HelloWorld_test.py 
+```
+
+You should see output similar to:
+
+```sh
+Brownie v1.19.3 - Python development framework for Ethereum
+
+================================================================================ test session starts =================================================================================
+platform linux -- Python 3.9.17, pytest-6.2.5, py-1.11.0, pluggy-1.0.0
+rootdir: /ubuntu/learn-vyper/vyper-by-examples
+plugins: eth-brownie-1.19.3, xdist-1.34.0, hypothesis-6.27.3, web3-5.31.3, forked-1.4.0
+collected 1 item                                                                                                                                                                     
+
+Launching 'ganache-cli --port 8545 --gasLimit 12000000 --accounts 10 --hardfork istanbul --mnemonic brownie'...
+
+tests/HelloWorld_test.py .                                                                                                                                                     [100%]
+
+================================================================================= 1 passed in 6.51s ==================================================================================
+Terminating local RPC client...
+```
+
+To generate a gas report:
+
+```sh
+brownie test tests/HelloWorld_test.py --gas
+```
+
+You should see output similar to:
+
+
+```sh
+Brownie v1.19.3 - Python development framework for Ethereum
+
+================================================================================ test session starts =================================================================================
+platform linux -- Python 3.9.17, pytest-6.2.5, py-1.11.0, pluggy-1.0.0
+rootdir: /ubuntu/learn-vyper/vyper-by-examples
+plugins: eth-brownie-1.19.3, xdist-1.34.0, hypothesis-6.27.3, web3-5.31.3, forked-1.4.0
+collected 1 item                                                                                                                                                                     
+
+Launching 'ganache-cli --port 8545 --gasLimit 12000000 --accounts 10 --hardfork istanbul --mnemonic brownie'...
+
+tests/HelloWorld_test.py .                                                                                                                                                     [100%]
+==================================================================================== Gas Profile =====================================================================================
+
+
+HelloWorld <Contract>
+   └─ constructor -  avg: 133278  avg (confirmed): 133278  low: 133278  high: 133278
+
+================================================================================= 1 passed in 6.90s ==================================================================================
+Terminating local RPC client...
+```
+Unit testing and gas optimization are integral to creating robust and cost-effective smart contracts. As you proceed in your Vyper learning journey, remember to incorporate these practices into your development process.
+
+
 ## Key Take aways
 
 ... (will add soon)
