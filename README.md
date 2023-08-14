@@ -19,7 +19,7 @@ This repository serves as your central hub for accessing all the resources you n
 Clone the Repository: Begin by cloning this repository to your local machine. You can do this by running the following command in your terminal:
 
 ```bash 
-git clone https://github.com/your-username/vyper-learning-path.git
+git clone https://github.com/AnandkKumaran/learn-vyper.git
 ```
 
 ### OR
@@ -45,3 +45,5 @@ For any questions, concerns, or feedback, please don't hesitate to reach out to 
 <div style="display: flex; justify-content: space-between;">
     <a style="text-decoration: none; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px;" href="Prerequisites.md">Next: Prerequisites</a>
 </div>
+
+

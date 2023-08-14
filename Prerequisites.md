@@ -61,6 +61,7 @@ Otherwise pipx is ready to go! ✨ 🌟 ✨
 
 ```
 
+
 2. **Install Brownie:**
 
 Now, install Brownie using pipx with the following command:
@@ -97,5 +98,5 @@ Please follow the [Next button](#) to start the course.
 
 <div style="display: flex; justify-content: space-between;">
     <a style="text-decoration: none; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; float: left;" href="README.md">Previous: Introduction</a>
-    <a style="text-decoration: none; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; float: right;" href="/vyper-by-examples/README.md">Next: Vyper by examples</a>
+    <a style="text-decoration: none; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; float: right;" href="/vyper-pokemon/README.md">Next: Creating your first pokemon</a>
 </div>
