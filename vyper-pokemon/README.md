@@ -2,10 +2,6 @@
 
 Welcome, learners! This module is designed to help you dive into Vyper contracts through the chapters presented in [Vyper Tutorials](https://learn.vyperlang.org/). 
 
-Please explore the following resources:
-
-1. [Vyper by Example](https://vyper-by-example.org/)
-2. [Video Tutorials](https://www.youtube.com/watch?v=-kZpEmNnzyE&list=PLO5VPQH6OWdWOd-IJTfIzlM2a1yv1rSN-)
 
 ## Create Your Project Folder
 

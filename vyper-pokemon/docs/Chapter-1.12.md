@@ -72,7 +72,7 @@ Generating build data...
 
 ============================================================================ test session starts =============================================================================
 platform linux -- Python 3.9.17, pytest-6.2.5, py-1.11.0, pluggy-1.0.0
-rootdir: /media/anand/78e9a4f0-d141-4399-abe0-07b9a9f0098c/anand/Workplace/learn-vyper/vyper-pokemon
+rootdir: /ubuntu/learn-vyper/vyper-pokemon
 plugins: eth-brownie-1.19.3, xdist-1.34.0, hypothesis-6.27.3, web3-5.31.3, forked-1.4.0
 collected 2 items                                                                                                                                                                    
 
